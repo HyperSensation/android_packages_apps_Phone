@@ -577,7 +577,7 @@ public class InCallScreen extends Activity
 
         // Disable the status bar "window shade" the entire time we're on
         // the in-call screen.
-        mApp.notificationMgr.statusBarHelper.enableExpandedView(false);
+        //mApp.notificationMgr.statusBarHelper.enableExpandedView(false);
         // ...and update the in-call notification too, since the status bar
         // icon needs to be hidden while we're the foreground activity:
         mApp.notificationMgr.updateInCallNotification();
@@ -843,7 +843,7 @@ public class InCallScreen extends Activity
         dismissAllDialogs();
 
         // Re-enable the status bar (which we disabled in onResume().)
-        mApp.notificationMgr.statusBarHelper.enableExpandedView(true);
+        //mApp.notificationMgr.statusBarHelper.enableExpandedView(true);
         // ...and the in-call notification too:
         mApp.notificationMgr.updateInCallNotification();
         // ...and *always* reset the system bar back to its normal state
